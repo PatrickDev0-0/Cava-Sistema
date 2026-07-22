@@ -20,7 +20,8 @@ export default function AppShell() {
         <div className="flex h-20 items-center gap-3 border-b border-white/10 px-6">
           <div className="grid h-11 w-11 place-items-center rounded-lg bg-[#ffb400] font-black text-2xl text-black">C</div>
           <div>
-            <b className="tracking-widest">CAVA</b>
+            
+            <b  className="tracking-widest">CAVA</b>
             <p className="text-[10px] uppercase tracking-[.2em] text-zinc-400">Controle de impressões</p>
           </div>
         </div>
