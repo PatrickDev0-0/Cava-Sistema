@@ -1,0 +1,49 @@
+{
+  "name": "Printer",
+  "type": "object",
+  "properties": {
+    "manufacturer": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "asset_tag": {
+      "type": "string"
+    },
+    "serial_number": {
+      "type": "string"
+    },
+    "ip_address": {
+      "type": "string"
+    },
+    "sector": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Ativa",
+        "Inativa"
+      ],
+      "default": "Ativa"
+    },
+    "snmp_compatible": {
+      "type": "boolean",
+      "default": false
+    },
+    "current_counter": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "manufacturer",
+    "model",
+    "asset_tag",
+    "sector"
+  ]
+}

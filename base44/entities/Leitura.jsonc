@@ -1,0 +1,47 @@
+{
+  "name": "Leitura",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "string",
+      "format": "date"
+    },
+    "hora": {
+      "type": "string"
+    },
+    "impressora_id": {
+      "type": "string"
+    },
+    "impressora_nome": {
+      "type": "string"
+    },
+    "contador_atual": {
+      "type": "number",
+      "default": 0
+    },
+    "diferenca": {
+      "type": "number",
+      "default": 0
+    },
+    "toner_instalado_id": {
+      "type": "string"
+    },
+    "toner_codigo": {
+      "type": "string"
+    },
+    "cilindro_instalado_id": {
+      "type": "string"
+    },
+    "cilindro_codigo": {
+      "type": "string"
+    },
+    "observacao": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "data",
+    "impressora_id",
+    "contador_atual"
+  ]
+}

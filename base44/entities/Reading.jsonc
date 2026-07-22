@@ -1,0 +1,31 @@
+{
+  "name": "Reading",
+  "type": "object",
+  "properties": {
+    "printer_id": {
+      "type": "string"
+    },
+    "reading_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "counter": {
+      "type": "number"
+    },
+    "difference": {
+      "type": "number",
+      "default": 0
+    },
+    "toner_id": {
+      "type": "string"
+    },
+    "drum_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "printer_id",
+    "reading_at",
+    "counter"
+  ]
+}

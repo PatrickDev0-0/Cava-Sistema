@@ -1,0 +1,58 @@
+{
+  "name": "SupplyEvent",
+  "type": "object",
+  "properties": {
+    "supply_id": {
+      "type": "string"
+    },
+    "printer_id": {
+      "type": "string"
+    },
+    "event_type": {
+      "type": "string",
+      "enum": [
+        "Entrada",
+        "Instala\u00e7\u00e3o",
+        "Troca",
+        "Consumo",
+        "Ajuste"
+      ]
+    },
+    "event_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "quantity": {
+      "type": "number",
+      "default": 1
+    },
+    "initial_counter": {
+      "type": "number",
+      "default": 0
+    },
+    "final_counter": {
+      "type": "number",
+      "default": 0
+    },
+    "pages_produced": {
+      "type": "number",
+      "default": 0
+    },
+    "real_yield_percent": {
+      "type": "number",
+      "default": 0
+    },
+    "cost_per_page": {
+      "type": "number",
+      "default": 0
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "supply_id",
+    "event_type",
+    "event_at"
+  ]
+}

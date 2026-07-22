@@ -1,0 +1,52 @@
+{
+  "name": "Impressora",
+  "type": "object",
+  "properties": {
+    "fabricante": {
+      "type": "string"
+    },
+    "modelo": {
+      "type": "string"
+    },
+    "patrimonio": {
+      "type": "string"
+    },
+    "numero_serie": {
+      "type": "string"
+    },
+    "ip": {
+      "type": "string"
+    },
+    "setor": {
+      "type": "string"
+    },
+    "localizacao": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Ativa",
+        "Inativa"
+      ],
+      "default": "Ativa"
+    },
+    "compativel_snmp": {
+      "type": "boolean",
+      "default": false
+    },
+    "contador_atual": {
+      "type": "number",
+      "default": 0
+    },
+    "ativo": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "fabricante",
+    "modelo",
+    "setor"
+  ]
+}

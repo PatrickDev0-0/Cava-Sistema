@@ -1,0 +1,47 @@
+{
+  "name": "TrocaCilindro",
+  "type": "object",
+  "properties": {
+    "impressora_id": {
+      "type": "string"
+    },
+    "impressora_nome": {
+      "type": "string"
+    },
+    "cilindro_id": {
+      "type": "string"
+    },
+    "cilindro_codigo": {
+      "type": "string"
+    },
+    "data": {
+      "type": "string",
+      "format": "date"
+    },
+    "contador_inicial": {
+      "type": "number",
+      "default": 0
+    },
+    "contador_final": {
+      "type": "number",
+      "default": 0
+    },
+    "paginas_produzidas": {
+      "type": "number",
+      "default": 0
+    },
+    "rendimento_real": {
+      "type": "number",
+      "default": 0
+    },
+    "custo_por_pagina": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "impressora_id",
+    "cilindro_id",
+    "data"
+  ]
+}

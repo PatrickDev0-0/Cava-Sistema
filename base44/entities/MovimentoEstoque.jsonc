@@ -1,0 +1,46 @@
+{
+  "name": "MovimentoEstoque",
+  "type": "object",
+  "properties": {
+    "tipo_item": {
+      "type": "string",
+      "enum": [
+        "Toner",
+        "Cilindro"
+      ]
+    },
+    "item_id": {
+      "type": "string"
+    },
+    "item_codigo": {
+      "type": "string"
+    },
+    "tipo_movimento": {
+      "type": "string",
+      "enum": [
+        "Entrada",
+        "Instalacao",
+        "Consumo",
+        "Ajuste"
+      ]
+    },
+    "quantidade": {
+      "type": "number",
+      "default": 0
+    },
+    "data": {
+      "type": "string",
+      "format": "date"
+    },
+    "observacao": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "tipo_item",
+    "item_id",
+    "tipo_movimento",
+    "quantidade",
+    "data"
+  ]
+}

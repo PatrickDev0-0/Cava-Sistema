@@ -1,0 +1,39 @@
+{
+  "name": "Cilindro",
+  "type": "object",
+  "properties": {
+    "codigo": {
+      "type": "string"
+    },
+    "fabricante": {
+      "type": "string"
+    },
+    "modelo": {
+      "type": "string"
+    },
+    "impressoras_compativeis": {
+      "type": "string"
+    },
+    "rendimento_esperado": {
+      "type": "number",
+      "default": 0
+    },
+    "valor_unitario": {
+      "type": "number",
+      "default": 0
+    },
+    "quantidade_estoque": {
+      "type": "number",
+      "default": 0
+    },
+    "ativo": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "codigo",
+    "fabricante",
+    "modelo"
+  ]
+}
